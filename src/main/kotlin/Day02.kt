@@ -14,7 +14,7 @@ fun main() {
             val b = w * h
             val c = h * l
 
-            val surfaceArea = 2*a + 2*b + 2*c
+            val surfaceArea = 2 * a + 2 * b + 2 * c
             val smallestSide = minOf(a, b, c)
 
             total += surfaceArea + smallestSide
@@ -30,8 +30,8 @@ fun main() {
             val values = line.split('x').map { it.toInt() }.sorted()
             val (a, b, c) = values
 
-            val perimeter = 2*a + 2*b
-            val bow = a*b*c
+            val perimeter = 2 * a + 2 * b
+            val bow = a * b * c
 
             total += perimeter + bow
         }
